@@ -2,6 +2,6 @@ require_relative 'application_controller'
 
 class ArticlesController < ApplicationController
   def index
-    'all articles'
+    @title = 'I built this controller'
   end
 end
