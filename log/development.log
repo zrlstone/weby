@@ -1,0 +1,19 @@
+I, [2023-09-26T08:53:43.336751 #4386]  INFO -- : GET: /articles/index
+I, [2023-09-26T08:53:46.117443 #4386]  INFO -- : GET: /
+I, [2023-09-26T08:55:57.710767 #4386]  INFO -- : GET: /articles/index
+E, [2023-09-26T08:55:57.711053 #4386] ERROR -- : Oops, something went wrong. Error: Stack Overflow!
+I, [2023-09-26T08:56:54.293538 #4386]  INFO -- : GET: /articles/index
+E, [2023-09-26T08:56:54.293784 #4386] ERROR -- : Stack Overflow! (RuntimeError)
+/Users/zakstone/code/zrlstone/weby/controllers/articles_controller.rb:5:in `index'
+/Users/zakstone/code/zrlstone/weby/router.rb:31:in `block in get'
+/Users/zakstone/code/zrlstone/weby/router.rb:41:in `build_response'
+/Users/zakstone/code/zrlstone/weby/app.rb:18:in `call'
+/Users/zakstone/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-3.0.8/lib/rack/static.rb:161:in `call'
+/Users/zakstone/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-3.0.8/lib/rack/reloader.rb:47:in `call'
+/Users/zakstone/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-6.3.1/lib/puma/configuration.rb:270:in `call'
+/Users/zakstone/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-6.3.1/lib/puma/request.rb:100:in `block in handle_request'
+/Users/zakstone/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-6.3.1/lib/puma/thread_pool.rb:344:in `with_force_shutdown'
+/Users/zakstone/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-6.3.1/lib/puma/request.rb:99:in `handle_request'
+/Users/zakstone/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-6.3.1/lib/puma/server.rb:443:in `process_client'
+/Users/zakstone/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-6.3.1/lib/puma/server.rb:245:in `block in run'
+/Users/zakstone/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-6.3.1/lib/puma/thread_pool.rb:151:in `block in spawn_thread'
